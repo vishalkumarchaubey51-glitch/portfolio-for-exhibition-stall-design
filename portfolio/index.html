@@ -1,0 +1,939 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Global Booth Designer offers premium exhibition stall design, custom booth fabrication, and impactful trade show experiences for brands across India, USA, and Europe.">
+    <meta name="keywords" content="exhibition stall designer, exhibition stall design, exhibition booth designer, trade show stall designer, booth fabrication, exhibition stand designer, exhibition booth fabrication, exhibition booth construction, exhibition stand architect, trade fair booth design, exhibition display design, expo booth designer, trade show booth design India, international exhibition design, exhibition design company, premium booth design, modular booth design, custom exhibition stand, event booth design, corporate exhibition stall, booth installation, exhibition booth lighting, booth graphics design, exhibition stand planning, experiential booth design, trade show stand builder, exhibition pavilion design, exhibition stall fabrication, trade fair exhibition booth, exhibition booth styling, exhibition marketing booth, trade show booth branding, booth concept design, exhibition stand contractor, exhibition space design, exhibition booth layout, exhibition booth consultancy, booth fabrication services, expo stand design, exhibition showcase design, trade exhibition designer, exhibition stand project, booth design consultancy, exhibition stand agency, exhibition stall rendering, booth display design, trade show and expo booth, exhibition booth planning, custom exhibition display, exhibition stand interior, booth graphic solutions, modular exhibition booth, premium exhibition shell scheme, exhibition stand for brands, exhibition stand design India, exhibition booth services, trade fair booth contractor, exhibition display branding, trade show booth ideas, exhibition stall branding, exhibition stand styling, exhibition display architecture, trade fair stand designer, custom trade show booth, exhibition booth marketing, booth concept development, exhibition stand fabrication services, event stand design, exhibition stand graphics, exhibition booth design services, trade show stand graphics, exhibition stand decorators, trade fair booth design services, exhibition booth production, exhibition booth setup, exhibition stand maintenance">
+    <meta name="author" content="Vishal Chaubey">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourdomain.com/">
+    <meta property="og:title" content="Global Booth Designer | Exhibition Stall Design">
+    <meta property="og:description" content="Premium exhibition stall design and booth fabrication for impactful trade show presence.">
+    <meta property="og:type" content="website">
+    <title>Global Booth Designer | Exhibition Stall Design</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Global Booth Designer",
+      "description": "Premium exhibition stall designer offering custom exhibition booth design, booth fabrication, and trade show stall solutions.",
+      "url": "https://yourdomain.com/",
+      "telephone": "+918873444715",
+      "email": "exhibitionsvishal@gmail.com",
+      "areaServed": ["India", "USA", "Europe"],
+      "sameAs": [
+        "https://wa.me/918873444715"
+      ],
+      "serviceType": [
+        "Exhibition Stall Design",
+        "Exhibition Booth Design",
+        "Booth Fabrication",
+        "Trade Show Stall Design"
+      ]
+    }
+    </script>
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #05080f;
+            --surface: rgba(255,255,255,0.05);
+            --surface-strong: rgba(255,255,255,0.12);
+            --text: #edf1f7;
+            --muted: #9aa3b1;
+            --accent: #57b6ff;
+            --accent-strong: #65d6ff;
+            --gold: #d4af37;
+            --radius: 28px;
+            --shadow: 0 30px 80px rgba(0,0,0,0.35);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: radial-gradient(circle at top left, rgba(42, 176, 255, 0.08), transparent 18%),
+                        radial-gradient(circle at bottom right, rgba(212, 175, 55, 0.08), transparent 20%),
+                        var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(255,255,255,0.04), transparent 40%);
+            pointer-events: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1180px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            backdrop-filter: blur(18px);
+            background: rgba(5,8,15,0.86);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            padding: 18px 0;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .brand span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
+
+        .nav-links a:hover {
+            color: var(--text);
+        }
+
+        .contact-pill {
+            display: inline-flex;
+            gap: 10px;
+            align-items: center;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            padding: 10px 16px;
+            border-radius: 999px;
+            color: var(--text);
+            font-size: 0.95rem;
+        }
+
+        .hero {
+            min-height: calc(100vh - 88px);
+            display: grid;
+            grid-template-columns: 1.35fr 1fr;
+            gap: 40px;
+            align-items: center;
+            padding: 80px 0 100px;
+        }
+
+        .hero-copy {
+            max-width: 620px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 24px;
+        }
+
+        .eyebrow::before {
+            content: '';
+            display: inline-block;
+            width: 28px;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 4vw, 5rem);
+            line-height: 0.98;
+            margin-bottom: 24px;
+            max-width: 760px;
+        }
+
+        .hero p {
+            color: var(--muted);
+            font-size: 1.05rem;
+            max-width: 700px;
+            margin-bottom: 34px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-bottom: 18px;
+        }
+
+        .hero-contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .hero-contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 16px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.12);
+            color: var(--text);
+            font-size: 0.95rem;
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+
+        .hero-contact-link:hover {
+            transform: translateY(-1px);
+            border-color: rgba(87, 182, 255, 0.4);
+        }
+
+        .hero-contact-icon {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+            color: #25d366;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 26px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+            color: #05080f;
+            font-weight: 700;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            box-shadow: 0 20px 45px rgba(37, 148, 255, 0.18);
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .button.secondary {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.16);
+            color: var(--text);
+            box-shadow: none;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .stat {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 22px;
+            padding: 22px;
+            text-align: center;
+        }
+
+        .stat strong {
+            display: block;
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .stat span {
+            color: var(--muted);
+        }
+
+        .hero-media {
+            display: grid;
+            gap: 24px;
+            align-items: end;
+        }
+
+        .hero-card {
+            border-radius: 32px;
+            overflow: hidden;
+            position: relative;
+            background: var(--surface);
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: var(--shadow);
+        }
+
+        .hero-card img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .hero-card.secondary {
+            transform: translateY(30px);
+        }
+
+        .section {
+            padding: 70px 0;
+        }
+
+        .section-heading {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .section-heading small {
+            color: var(--accent);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-size: 0.82rem;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(2.3rem, 2.7vw, 3.4rem);
+            line-height: 1.05;
+            max-width: 760px;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+            max-width: 720px;
+            font-size: 1rem;
+        }
+
+        .feature-grid,
+        .portfolio-grid,
+        .process-grid,
+        .testimonial-grid {
+            display: grid;
+            gap: 24px;
+        }
+
+        .feature-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .feature-card,
+        .portfolio-card,
+        .process-card,
+        .testimonial-card {
+            background: var(--surface);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 28px;
+            box-shadow: 0 22px 55px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .feature-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feature-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .feature-image {
+            position: relative;
+        }
+
+        .feature-image-label {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: rgba(0, 0, 0, 0.65);
+            color: #ffffff;
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .feature-card .feature-card-body {
+            padding: 24px;
+        }
+
+        .feature-card h3,
+        .process-card h3,
+        .portfolio-title {
+            margin-bottom: 16px;
+        }
+
+        .feature-card h3,
+        .process-card h3,
+        .portfolio-title {
+            font-size: 1.25rem;
+            color: #ffffff;
+        }
+
+        .feature-card p,
+        .process-card p,
+        .portfolio-copy,
+        .testimonial-card p {
+            color: var(--muted);
+            font-size: 0.97rem;
+        }
+
+        .portfolio-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .portfolio-card {
+            padding: 0;
+            overflow: hidden;
+            min-height: auto;
+        }
+
+        .portfolio-card img {
+            width: 100%;
+            height: 310px;
+            object-fit: cover;
+            transition: transform 0.35s ease;
+        }
+
+        .portfolio-card:hover img {
+            transform: scale(1.04);
+        }
+
+        .portfolio-overlay {
+            padding: 26px;
+        }
+
+        .portfolio-title {
+            margin: 0 0 12px;
+        }
+
+        .portfolio-copy {
+            margin-bottom: 0;
+        }
+
+        .process-grid {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .process-card {
+            text-align: center;
+        }
+
+        .process-step {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            margin-bottom: 18px;
+            border-radius: 18px;
+            background: rgba(87, 182, 255, 0.15);
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .testimonial-card {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .testimonial-card small {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-size: 0.8rem;
+        }
+
+        .cta-panel {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 26px;
+            align-items: center;
+            padding: 40px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 32px;
+            margin-top: 30px;
+        }
+
+        .cta-panel h3 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+
+        .cta-panel p {
+            color: var(--muted);
+            max-width: 540px;
+            margin-bottom: 18px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 26px;
+        }
+
+        .contact-card {
+            background: var(--surface);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 28px;
+            padding: 32px;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.22);
+        }
+
+        .contact-card h3 {
+            margin-bottom: 18px;
+            font-size: 1.4rem;
+        }
+
+        .contact-card p,
+        .contact-card a {
+            color: var(--muted);
+            display: block;
+            margin-bottom: 14px;
+        }
+
+        .contact-card a {
+            color: var(--text);
+        }
+
+        .contact-whatsapp-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text);
+            text-decoration: none;
+            margin-bottom: 14px;
+        }
+
+        .contact-whatsapp-link svg {
+            width: 18px;
+            height: 18px;
+            color: #25d366;
+            flex-shrink: 0;
+        }
+
+        footer {
+            padding: 40px 0 24px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 1024px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-media {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .process-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 780px) {
+            .topbar,
+            .hero-media,
+            .feature-grid,
+            .portfolio-grid,
+            .process-grid,
+            .testimonial-grid,
+            .contact-grid,
+            .cta-panel {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: auto;
+                padding-top: 60px;
+            }
+
+            .hero-actions {
+                justify-content: flex-start;
+            }
+
+            .stat {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container topbar">
+            <div class="brand"><span>Global</span> Booth Designer</div>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#process">Process</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="contact-pill">📞 +91 8873444715</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-copy">
+                <div class="eyebrow">Global Booth Designer</div>
+                <h1>Premium Exhibition Stall Designer for Impactful Booths and Trade Show Presence</h1>
+                <p>We are a trusted exhibition stall designer creating custom exhibition booths, premium stall designs, and high-impact trade show spaces for brands across India, the USA, and Europe.</p>
+                <div class="hero-actions">
+                    <a class="button" href="#portfolio">View Portfolio</a>
+                    <a class="button secondary" href="#contact">Book a Design Call</a>
+                </div>
+                <div class="hero-contact-links">
+                    <a class="hero-contact-link" href="mailto:exhibitionsvishal@gmail.com">📧 exhibitionsvishal@gmail.com</a>
+                    <a class="hero-contact-link" href="https://wa.me/918873444715" target="_blank" rel="noopener noreferrer">
+                        <svg class="hero-contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.272-.099-.47-.149-.67.149-.2.297-.768.966-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.149-.174.199-.297.298-.495.099-.198.05-.372-.025-.521-.074-.149-.67-1.611-.92-2.206-.242-.579-.487-.5-.67-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.073.149.198 2.095 3.2 5.076 4.49.709.306 1.262.49 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.72 2.006-1.414.248-.694.248-1.287.174-1.414-.074-.126-.272-.198-.57-.347Z"/>
+                        </svg>
+                        <span>+91 8873444715</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><strong>15+</strong><span>Global exhibition projects</span></div>
+                    <div class="stat"><strong>3x</strong><span>Higher brand recall</span></div>
+                    <div class="stat"><strong>100%</strong><span>On-time stall delivery</span></div>
+                </div>
+            </div>
+            <div class="hero-media">
+                <div class="hero-card">
+                    <img src="image for us/double decor.png" alt="Double Decker Stall Design">
+                </div>
+                <div class="hero-card secondary">
+                    <img src="image for us/Europe Market Concepts/a4.jpeg" alt="European exhibition stand">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="section-heading">
+                <small>Why choose us</small>
+                <h2>We turn exhibition visions into premium brand destinations with expert booth design.</h2>
+                <p>From concept to execution, every exhibition stall is engineered to reflect your brand personality, drive leads, and deliver a memorable visitor experience at trade shows and events.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="image for us/a10.jpeg" alt="Booth concept mockup">
+                        <div class="feature-image-label">Concept Design</div>
+                    </div>
+                    <div class="feature-card-body">
+                        <h3>Brand-first architecture</h3>
+                        <p>Custom exhibition booth design shaped around your identity, product strategy, and event objectives for maximum brand recall.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="image for us/b6.jpeg" alt="Visitor flow design">
+                        <div class="feature-image-label">Visitor Flow</div>
+                    </div>
+                    <div class="feature-card-body">
+                        <h3>High-impact visitor flow</h3>
+                        <p>Smart layouts that capture attention, guide traffic naturally, and create multiple engagement points.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="image for us/a7.jpeg" alt="Premium stall delivery">
+                        <div class="feature-image-label">Premium Delivery</div>
+                    </div>
+                    <div class="feature-card-body">
+                        <h3>Premium delivery</h3>
+                        <p>From sourcing to installation, we manage every detail so your stall arrives polished and exhibition-ready.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="image for us/Europe Market Concepts/s28.jpeg" alt="Creative exhibition visuals">
+                        <div class="feature-image-label">Brand Visuals</div>
+                    </div>
+                    <div class="feature-card-body">
+                        <h3>Immersive brand visuals</h3>
+                        <p>Bold exhibit styling and premium finishes create a memorable visual experience for every visitor.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="image for us/Europe Market Concepts/z1.jpeg" alt="Interactive booth design">
+                        <div class="feature-image-label">Interactive Booth</div>
+                    </div>
+                    <div class="feature-card-body">
+                        <h3>Interactive booth design</h3>
+                        <p>Engaging touchpoints, demo zones, and hospitality spaces designed to boost participation and lead capture.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="image for us/s4.jpeg" alt="Exhibition booth strategy">
+                        <div class="feature-image-label">Strategic Planning</div>
+                    </div>
+                    <div class="feature-card-body">
+                        <h3>Strategic exhibition planning</h3>
+                        <p>Every booth is planned for maximum brand visibility, smooth visitor movement, and event objectives that convert.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="image for us/a11.jpeg" alt="Exhibition booth brand integration">
+                        <div class="feature-image-label">Brand Integration</div>
+                    </div>
+                    <div class="feature-card-body">
+                        <h3>Brand integration</h3>
+                        <p>Seamless booth design that strengthens your branding across every surface, display, and activation area.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="image for us/a3.jpeg" alt="Custom stall architecture">
+                        <div class="feature-image-label">Custom Architecture</div>
+                    </div>
+                    <div class="feature-card-body">
+                        <h3>Custom stall architecture</h3>
+                        <p>Precision-engineered exhibition structures that deliver a premium look and durable performance.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="image for us/a8.jpeg" alt="Exhibition furniture and display">
+                        <div class="feature-image-label">Display Furniture</div>
+                    </div>
+                    <div class="feature-card-body">
+                        <h3>Display furniture and fittings</h3>
+                        <p>Curated furniture, shelving, and display solutions that support product storytelling and visitor comfort.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-image">
+                        <img src="image for us/s5.jpeg" alt="Lighting and signage design">
+                        <div class="feature-image-label">Lighting & Signage</div>
+                    </div>
+                    <div class="feature-card-body">
+                        <h3>Lighting & signage design</h3>
+                        <p>Strategic illumination and branded signage that ensure your booth looks striking from every angle.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="portfolio">
+            <div class="section-heading">
+                <small>Portfolio</small>
+                <h2>Featured exhibition stalls built for premium brands.</h2>
+            </div>
+            <div class="portfolio-grid">
+                <article class="portfolio-card">
+                    <img src="image for us/pr 5.jpeg" alt="Premium exhibition stall">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Luxury Retail Showcase</h3>
+                        <p class="portfolio-copy">White-glow hospitality booth with premium product shelves and executive meeting zones.</p>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <img src="image for us/b5.jpeg" alt="Trade show stall design">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Brand Activation Pavilion</h3>
+                        <p class="portfolio-copy">High-visibility corner stall with immersive branding and seamless visitor journey.</p>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <img src="image for us/Europe Market Concepts/s28.jpeg" alt="European trade fair stall">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">European Market Concept</h3>
+                        <p class="portfolio-copy">Refined exhibit with premium timber accents, display zones and elegant lounge spaces.</p>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <img src="image for us/Europe Market Concepts/s29.jpeg" alt="Modern exhibition design">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Modern Hospitality Booth</h3>
+                        <p class="portfolio-copy">Open-plan interaction area with branded counters and polished digital presentation elements.</p>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <img src="image for us/Europe Market Concepts/s39.jpeg" alt="Exhibition stall architecture">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Premium Tech Pavilion</h3>
+                        <p class="portfolio-copy">Bold cantilever form, integrated signage, and an inviting space for product demos.</p>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <img src="image for us/Europe Market Concepts/z1.jpeg" alt="Designer exhibition stall">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Dynamic Launch Stand</h3>
+                        <p class="portfolio-copy">Energetic brand stand with dramatic lighting, premium surfaces and strong display focus.</p>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <img src="image for us/s4.jpeg" alt="Modern exhibition booth design">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Contemporary Exhibition Booth</h3>
+                        <p class="portfolio-copy">Clean lines and elegant lighting create a welcoming space for product display and client meetings.</p>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <img src="image for us/Europe Market Concepts/s30.jpeg" alt="Premium exhibition lounge design">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Premium Exhibition Lounge</h3>
+                        <p class="portfolio-copy">A refined booth layout with premium finishes, lounge seating and brand storytelling zones.</p>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <img src="image for us/Europe Market Concepts/z2.jpeg" alt="Interactive exhibition booth design">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Interactive Showcase Booth</h3>
+                        <p class="portfolio-copy">Immersive display elements and visitor interaction spaces designed for high engagement.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="process">
+            <div class="section-heading">
+                <small>How we work</small>
+                <h2>Simple, strategic process for award-ready exhibition stalls and booth design.</h2>
+            </div>
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-step">01</div>
+                    <h3>Discovery</h3>
+                    <p>Understand your brand, audience and event goals to define a design direction that sells.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-step">02</div>
+                    <h3>Concept</h3>
+                    <p>Develop a concept that balances visual impact, functionality and visitor experience.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-step">03</div>
+                    <h3>Build</h3>
+                    <p>Deliver production-ready plans, manage sourcing, and coordinate flawless installation.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-step">04</div>
+                    <h3>Launch</h3>
+                    <p>Hand over a polished exhibition stall designed to attract attention, drive leads, and impress buyers.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <small>Testimonials</small>
+                <h2>Clients who trusted us for their exhibition presence.</h2>
+            </div>
+            <div class="testimonial-grid">
+                <article class="testimonial-card">
+                    <small>MM Media & Exhibition</small>
+                    <p>Trusted for impactful exhibition setups that combine strong branding with elegant visitor engagement.</p>
+                    <p><a href="https://www.mmexhibition.com/" target="_blank">www.mmexhibition.com</a></p>
+                </article>
+                <article class="testimonial-card">
+                    <small>WL EXPO</small>
+                    <p>Known for premium booth presence and thoughtfully designed spaces that reflect a brand’s identity with clarity.</p>
+                    <p><a href="https://wlexpo.co/" target="_blank">wlexpo.co</a></p>
+                </article>
+                <article class="testimonial-card">
+                    <small>Wood Leads Technical Services LLC</small>
+                    <p>Chosen for reliable execution, modern booth concepts, and attention to detail that elevates every show experience.</p>
+                    <p><a href="https://woodleadsexhibitions.com/" target="_blank">woodleadsexhibitions.com</a></p>
+                </article>
+                <article class="testimonial-card">
+                    <small>Brand Experience Partner</small>
+                    <p>"The layout, lighting and brand storytelling were all perfect for our premium product launch."</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="section-heading">
+                <small>Get in touch</small>
+                <h2>Ready to make your next exhibition stand the best yet?</h2>
+            </div>
+            <div class="cta-panel">
+                <div>
+                    <h3>Talk to your stall design partner</h3>
+                    <p>Share your event details and we’ll create a high-impact stall concept tailored for your brand and audience.</p>
+                    <a class="button" href="mailto:exhibitionsvishal@gmail.com">Start the conversation</a>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>Contact</h3>
+                        <p>Vishal Chaubey</p>
+                        <a href="tel:+918873444715">+91 8873444715</a>
+                        <a class="contact-whatsapp-link" href="https://wa.me/918873444715" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.272-.099-.47-.149-.67.149-.2.297-.768.966-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.149-.174.199-.297.298-.495.099-.198.05-.372-.025-.521-.074-.149-.67-1.611-.92-2.206-.242-.579-.487-.5-.67-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.073.149.198 2.095 3.2 5.076 4.49.709.306 1.262.49 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.72 2.006-1.414.248-.694.248-1.287.174-1.414-.074-.126-.272-.198-.57-.347Z"/>
+                            </svg>
+                            <span>WhatsApp +91 8873444715</span>
+                        </a>
+                        <a href="mailto:exhibitionsvishal@gmail.com">exhibitionsvishal@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Why choose us</h3>
+                        <p>We design premium exhibition stalls, manage delivery and ensure every detail reflects your brand’s ambition.</p>
+                        <p>Fast concept cycles. Premium build quality. Memorable visitor experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">&copy; 2026 Global Booth Designer | Exhibition Stall Design by Vishal Chaubey</div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', event => {
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    event.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
